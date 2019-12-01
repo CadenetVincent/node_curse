@@ -10,15 +10,12 @@ ECE Class work Node.js 2019
 
 Some different task to do and share with our teacher.
 
-First TP_02 the 24/11/2019 :
+First TP_03 the 01/12/2019 with LevelDB :
 
--> Add to src/server.ts the code to expose the front that we had previously in the index.js. You should have:
-/ home page with description
-/hello page with the button and AJAX request for obtaining metrics
-
--> Using the code and repo from last module, convert everything to use express instead of doing routing and server setup manually. You should have:
-/ home page with description
-/hello page with the button and AJAX request for obtaining metrics
+1. Add a `get` function to `metrics` module
+2. Add a route to get a metric (one of the metric, all the metrics)
+3. Add a `delete` function to `metrics` module
+4. Add a route to delete a metric based on its key
 
 #################
 # Prerequisites #
@@ -28,15 +25,21 @@ The project is running on Windows.
 The version of node is : v12.13.0 in my computer
 The version of npm is : v6.12.1 in my computer
 See all the packet npm :
-"ejs": "^2.7.4",
-"express": "^4.17.1",
-"nodemon": "^2.0.0",
-"ts-node": "^8.5.2"
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.4",
+    "encoding-down": "^6.3.0",
+    "express": "^4.17.1",
+    "level-ws": "^2.0.0",
+    "leveldown": "^5.4.1",
+    "levelup": "^4.3.2",
+    "nodemon": "^2.0.0",
+    "ts-node": "^8.5.2"
 
 And dev dependancies :
-"@types/express": "^4.17.2",
-"@types/node": "^12.12.12",
-"typescript": "^3.7.2"
+    "@types/express": "^4.17.2",
+    "@types/levelup": "^3.1.1",
+    "@types/node": "^12.12.12",
+    "typescript": "^3.7.2"
 
 And others in public/ :
 Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -62,11 +65,7 @@ Build and start the application :
 
 !!!!!!! IMPORTANT !!!!!!!!
 
-if you want to start first project (EXPRESSJS_WORK_01) :
-
-npm run startone
-
-if you want to start second project (TYPESCRIPT_WORK_02) :
+if you want to start the good project with LevelDB :
 
 npm run starttwo
 
